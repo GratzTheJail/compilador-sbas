@@ -1,0 +1,680 @@
+<html data-darkreader-mode="dynamic" data-darkreader-scheme="dark"><head><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">@layer {
+html {
+    background-color: var(--darkreader-background-ffffff, #181a1b) !important;
+}
+html {
+    color-scheme: dark !important;
+}
+iframe {
+    color-scheme: dark !important;
+}
+html, body {
+    background-color: var(--darkreader-background-ffffff, #181a1b);
+}
+html, body {
+    border-color: var(--darkreader-border-4c4c4c, #736b5e);
+    color: var(--darkreader-text-000000, #e8e6e3);
+}
+a {
+    color: var(--darkreader-text-0040ff, #3391ff);
+}
+table {
+    border-color: var(--darkreader-border-808080, #545b5e);
+}
+mark {
+    color: var(--darkreader-text-000000, #e8e6e3);
+}
+::placeholder {
+    color: var(--darkreader-text-a9a9a9, #b2aba1);
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: var(--darkreader-background-faffbd, #404400) !important;
+    color: var(--darkreader-text-000000, #e8e6e3) !important;
+}
+* {
+    scrollbar-color: var(--darkreader-background-b0b0b0, #454a4d) var(--darkreader-background-f1f1f1, #202324);
+}
+::selection {
+    background-color: var(--darkreader-background-0060d4, #004daa) !important;
+    color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+}
+::-moz-selection {
+    background-color: var(--darkreader-background-0060d4, #004daa) !important;
+    color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+}
+}</style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, img.Wirisformula, a[data-testid="headerMediumLogo"]>svg, .d2l-navigation-link-image-container, .d2l-iframe-loading-container {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}
+[data-darkreader-inline-bg] {
+  background: var(--darkreader-inline-bg) !important;
+}
+[data-darkreader-inline-border-short] {
+  border: var(--darkreader-inline-border-short) !important;
+}
+[data-darkreader-inline-border-bottom-short] {
+  border-bottom: var(--darkreader-inline-border-bottom-short) !important;
+}
+[data-darkreader-inline-border-left-short] {
+  border-left: var(--darkreader-inline-border-left-short) !important;
+}
+[data-darkreader-inline-border-right-short] {
+  border-right: var(--darkreader-inline-border-right-short) !important;
+}
+[data-darkreader-inline-border-top-short] {
+  border-top: var(--darkreader-inline-border-top-short) !important;
+}
+[data-darkreader-inline-invert] {
+    filter: invert(100%) hue-rotate(180deg);
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: var(--darkreader-background-ffffff, #181a1b);
+   --darkreader-neutral-text: var(--darkreader-text-000000, #e8e6e3);
+   --darkreader-selection-background: var(--darkreader-background-0060d4, #004daa);
+   --darkreader-selection-text: var(--darkreader-text-ffffff, #e8e6e3);
+}</style><style class="darkreader darkreader--root-vars" media="screen"></style>
+	<title>Software Básico - Segundo Trabalho</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<link media="screen,projection,handheld" href="enunciado_arquivos/style.css" type="text/css" rel="stylesheet"><style class="darkreader darkreader--sync" media="screen"></style>
+	<style>
+		.wrap {
+			margin: 3em;
+		}
+		body {
+			background: white;
+		}
+	</style><style class="darkreader darkreader--sync" media="screen"></style>
+<meta name="darkreader" content="07717b4a5b9e4588a60344131e665ff9"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: var(--darkreader-background-ffd76e, #684b00) !important;
+    border-color: var(--darkreader-background-c59d00, #9e7e00) !important;
+    color: var(--darkreader-text-302505, #d7d4cf) !important;
+}
+#vimvixen-console-frame {
+    color-scheme: light !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1,
+.nfe-quote-text {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: var(--darkreader-background-add8e6, #1b4958) !important;
+}
+.tou-z65h9k,
+.tou-mignzq,
+.tou-1b6i2ox,
+.tou-lnqlqk {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.tou-75mvi {
+    background-color: var(--darkreader-background-cfecf5, #0f3a47) !important;
+}
+.tou-ta9e87,
+.tou-1w3fhi0,
+.tou-1b8t2us,
+.tou-py7lfi,
+.tou-1lpmd9d,
+.tou-1frrtv8,
+.tou-17ezmgn {
+    background-color: var(--darkreader-background-f5f5f5, #1e2021) !important;
+}
+.tou-uknfeu {
+    background-color: var(--darkreader-background-faedda, #432c09) !important;
+}
+.tou-6i3zyv {
+    background-color: var(--darkreader-background-85c3d8, #245d70) !important;
+}
+div.mermaid-viewer-control-panel .btn {
+    background-color: var(--darkreader-neutral-background);
+    fill: var(--darkreader-neutral-text);
+}
+svg g rect.er {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.entityBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxOdd {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxEven {
+    fill: var(--darkreader-selection-background);
+    fill-opacity: 0.8 !important;
+}
+svg rect.er.relationshipLabelBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g g.nodes rect,
+svg g g.nodes polygon {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.task {
+    fill: var(--darkreader-selection-background) !important;
+}
+svg line.messageLine0,
+svg line.messageLine1 {
+    stroke: var(--darkreader-neutral-text) !important;
+}
+div.mermaid .actor {
+    fill: var(--darkreader-neutral-background) !important;
+}
+mitid-authenticators-code-app > .code-app-container {
+    background-color: white !important;
+    padding-top: 1rem;
+}
+iframe#unpaywall[src$="unpaywall.html"] {
+    color-scheme: light !important;
+}
+select option {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+body#tumblr {
+    --darkreader-bg--secondary-accent: 31, 32, 34 !important;
+    --darkreader-bg--white: 23, 23, 23 !important;
+    --darkreader-text--black: 228, 224, 218 !important;
+}
+:host {
+    --d2l-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-button-icon-background-color-hover: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-color-ferrite: var(--darkreader-neutral-text) !important;
+    --d2l-color-sylvite: var(--darkreader-bg--d2l-color-sylvite) !important;
+    --d2l-dropdown-background-color: var(--darkreader-neutral-background) !important;
+    --d2l-dropdown-border-color: var(--darkreader-border--d2l-color-mica) !important;
+    --d2l-input-backgroud-color: var(--darkreader-neutral-background) !important;
+    --d2l-menu-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-tooltip-background-color: var(--darkreader-neutral-background) !important;
+    --d2l-tooltip-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+:host([_floating]) .d2l-floating-buttons-container {
+    background-color: var(--darkreader-neutral-background) !important;
+    border-top-color: var(--darkreader-border--d2l-color-mica) !important;
+    opacity: 0.88 !important;
+}
+d2l-card {
+    background: var(--darkreader-neutral-background) !important;
+    border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+}
+d2l-dropdown-content > div,
+d2l-menu-item {
+    background-color: var(--darkreader-neutral-background) !important;
+    border-radius: 10px !important;
+}
+d2l-empty-state-simple {
+    border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-button-filter > ul > li > a.vui-button {
+    border-color: var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-label-text:has(.d2l-button-subtle-content):hover,
+.d2l-label-text:has(.d2l-button-subtle-content):focus,
+.d2l-label-text:has(.d2l-button-subtle-content):active {
+    background-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-navigation-centerer {
+    color: inherit !important;
+}
+.d2l-tabs-layout {
+    border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+}
+.d2l-input,
+.d2l-calendar-date,
+.d2l-htmleditor-container {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.d2l-collapsible-panel {
+    border: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+    border-radius: 0.4rem !important;
+}
+.d2l-collapsible-panel-divider {
+    border-bottom: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-w2d-flex {
+    border-bottom: 2px solid var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-collapsible-panel scrolled,
+.d2l-collapsible-panel-header,
+.d2l-w2d-collection-fixed {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.d2l-loading-spinner-bg {
+    fill: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-loading-spinner-bg-stroke {
+    stroke: var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-loading-spinner-wrapper svg path,
+.d2l-loading-spinner-wrapper svg circle {
+    fill: var(--darkreader-neutral-background) !important;
+}
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }</style><style>:is([id*='google_ads_iframe'],[id*='taboola-'],.taboolaHeight,.taboola-placeholder,#top-ad,#credential_picker_container,#credentials-picker-container,#credential_picker_iframe,[id*='google-one-tap-iframe'],#google-one-tap-popup-container,.google-one-tap__module,.google-one-tap-modal-div,#amp_floatingAdDiv,#ez-content-blocker-container) {display:none!important;min-height:0!important;height:0!important;}</style><style class="darkreader darkreader--sync" media="screen"></style></head>
+<body>
+<div class="wrap">
+
+<h1>INF1018 - Software Básico (2025.1)<br>
+Segundo Trabalho</h1>
+
+<h2>Um gerador de código para linguagem básica</h2>
+<p>
+O objetivo deste trabalho é desenvolver em C uma função chamada
+<b><code>peqcomp</code></b>, que implementa
+um pequeno gerador de código (um "micro-compilador") para uma
+linguagem de programação bem básica, chamada <em>SBas</em>.
+</p><p>
+A função <code>peqcomp</code> deverá ler um arquivo texto contendo o 
+código fonte de uma função escrita em <em>SBas</em>, gerar o o código
+ de máquina que corresponde à tradução da função contida no arquivo 
+ na área passada no segundo parâmetro, e retornar um ponteiro para 
+ a função gerada. A indicação é que a função main que chamar 
+ <code>peqcomp</code> declare como variável local um vetor de unsigned char 
+ de tamanho apropriado e o passe como segundo parâmetro para <code>peqcomp</code>.
+
+
+</p><h2>Instruções Gerais</h2>
+
+<hr>
+<font color="red" style="--darkreader-inline-color: var(--darkreader-text-ff0000, #ff1a1a);" data-darkreader-inline-color="">
+	Leia com atenção o enunciado do trabalho e as instruções para a entrega.
+	Em caso de dúvidas, não invente. Pergunte!
+</font>
+<hr>
+
+<ul>
+	<li>O trabalho deve ser entregue até a data agendada no EaD.</li>
+	<li>Trabalhos entregues com atraso perderão <b>um ponto por dia de atraso</b>.</li>
+	<li>Trabalhos que não compilem <b>não serão considerados</b>, ou seja, receberão grau zero.</li>
+	<li>Os trabalhos podem ser feitos em grupos de dois alunos.</li>
+	<li>Alguns grupos poderão ser chamados para apresentações orais / demonstrações dos trabalhos entregues.</li>
+</ul>
+
+<hr>
+<h2>A Linguagem <em>SBas</em></h2>
+
+<p>
+O único tipo de dado de <em>SBas</em> é inteiro, com sinal, de 32 bits.
+
+</p><p>
+Variáveis locais são da forma <b><code>vi</code></b>, 
+sendo o índice <b>i</b> utilizado para identificar a variável
+(<code>v1, v2, v3, v4, v5</code>).
+A linguagem permite o uso de no máximo 5 variáveis locais.
+
+</p><p>
+Parâmetros de funções <em>SBas</em> são denotados por <b><code>pi</code></b>,
+e podem ser usados no máximo 3 parâmetros (<code>p1, p2, p3</code>).
+
+</p><p>
+Constantes são escritas na forma <b><code>$i</code></b>, onde <code>i</code> é um valor inteiro, com um sinal opcional.
+Por exemplo, <b><code>$10</code></b> representa o valor <b>10</b> e <b><code>$-10</code></b> representa o valor <b>-10</b>.
+
+</p><p>
+Funções <em>SBas</em> contém atribuições, operações aritméticas e instruções de desvio e de retorno.
+
+</p><ul>
+	<li>Uma atribuição tem a forma <b><pre>var ':' varpc</pre></b> onde <b><code>var</code></b> é uma variável local e <b><code>varpc</code></b> é uma variável local, um parâmetro ou uma constante inteira.
+</li></ul>
+
+<p>
+Como exemplo, se temos:
+
+</p><pre>v1 : p1
+v2 : $1
+v3 : v2
+</pre>
+
+<p>
+o valor do parâmetro p1 será armazenado na variável local v1 e o valor 
+inteiro 1 será armazenado nas variáveis locais  v2 e, consequentemente, 
+em v3.
+
+</p><ul>
+	<li>Uma operação aritmética tem a forma:
+</li></ul>
+
+<b><pre>var = varc op varc</pre></b>
+
+onde:
+<b><code>var</code></b> é uma variável local,
+<b><code>varc</code></b> é uma variável local ou uma constante inteira, e <b><code>op</code></b> é um dos operadores '+' , '-' ou '*'.
+
+<p>
+Como exemplo, se temos:
+
+</p><pre>v1 = v2 + $1
+v4 = v2 * v3
+</pre>
+
+<p>
+o resultado da operação <code>v2 + 1</code> será armazenado na variável local v1 e o resultado da operação <code>v2 * v3</code> será armazenado na variável local v4.
+
+</p><ul>
+	<li>A instrução de desvio tem a forma (sem as aspas): <b><pre>'iflez' var n</pre></b> onde <code><b>var</b></code> é uma variável local e <code><b>n</b></code> é o número de uma linha no código fonte. A semântica dessa instrução é a seguinte:
+	<ul>
+		<li> se o valor da variável local é <b>menor ou igual a 0</b>, será executado um desvio para a instrução que está na linha <b>n</b>;
+		</li><li> se o valor da variável local é <b>maior que 0</b>, não há desvio e a execução segue normalmente para a instrução da linha seguinte.
+	</li></ul>
+	</li><li>Finalmente, a instrução de retorno tem a forma (sem as aspas): <b><pre>'ret' varc</pre></b> Neste caso, a função deverá retornar, e seu valor de retorno é o valor da variável local ou constante inteira indicada.
+</li></ul>
+
+<p>
+A sintaxe da linguagem <em>SBas</em> pode ser definida formalmente como abaixo.
+Note que as cadeias entre <b>' '</b> são símbolos terminais da linguagem: os caracteres <b>'</b> não aparecem nos comandos!
+
+</p><p>
+</p><div style="margin-left: 40px;">
+<table cellspacing="0" cellpadding="5">
+<tbody><tr><td>func</td><td>::=</td><td>cmd '\n' | cmd '\n' func
+</td></tr><tr><td>cmd</td><td>::=</td><td>att | expr | dif | ret
+</td></tr><tr><td>att</td><td>::=</td><td>var ':' varpc
+</td></tr><tr><td>expr</td><td>::=</td><td>var '=' varc op varc</td> 
+</tr><tr><td>var</td><td>::=</td><td>'v' num</td>
+</tr><tr><td>varc</td><td>::=</td><td>var | '$' snum </td>
+</tr><tr><td>varpc</td><td>::=</td><td>varc | 'p' num </td>
+</tr><tr><td>op</td><td>::=</td><td>'+' | '-' | '*'</td>
+</tr><tr><td>ret</td><td>::=</td><td>'ret' varc</td>
+</tr><tr><td>dif</td><td>::=</td><td>'iflez' var num</td>
+</tr><tr><td>num</td><td>::=</td><td>digito | digito num</td>
+</tr><tr><td>snum</td><td>::=</td><td>[-] num</td>
+</tr><tr><td>digito</td><td>::=</td><td>0' | '1' | '2' | '3' | '4' | '5' | '6' | '7'|  '8' |  '9'</td>
+</tr></tbody></table>
+</div>
+<br>
+<hr>
+
+<h3> Alguns Exemplos </h3>
+Veja a seguir alguns exemplos de funções <em>SBas</em>.
+<p>
+<font color="red" style="--darkreader-inline-color: var(--darkreader-text-ff0000, #ff1a1a);" data-darkreader-inline-color=""> Note que os comentários não fazem parte da linguagem!
+Eles estão incluídos nos exemplos abaixo apenas para facilitar seu entendimento.
+</font>
+</p><ul>
+<li>O primeiro exemplo implementa uma função <em>f(x) = x + 1</em>
+<b><small><pre>v1 : p1       // 1: obtem argumento
+v1 = v1 + $1  // 2: soma 1 
+ret v1        // 3: retorna o resultado
+</pre></small></b>
+
+</li><li>O exemplo a seguir implementa uma função que avalia se seu
+argumento é negativo
+<b><small><pre>v1 : p1      // 1: obtem argumento
+v1 = v1 + $1 // 2: soma 1 para poder testar &lt;= 0
+iflez v1 5   // 3: se menor ou igual a 0, desvia para linha 5
+ret $0       // 4: retorna 0 (não é negativo)
+ret $1       // 5: retorna 1 (é negativo)
+</pre></small></b>
+</li><li>O próximo exemplo implementa uma função <em>f(x,y) = (x+y) * (x-y)</em>
+<b><small><pre>v1 : p1      // 1: obtem primeiro argumento
+v2 : p2      // 2: obtem segundo argumento
+v3 = v1 + v2 // 3: calcula a soma
+v4 = v1 - v2 // 4: calcula a diferença
+v1 = v3 * v4 // 5: multiplica
+ret v1       // 6: retorna o resultado
+</pre></small></b>
+
+</li><li>A seguir, a função fatorial!
+<b><small><pre>v1 : p1      // 1: obtem argumento
+v2 : $1      // 2: Inicializa valor do fatorial
+v3 : $0      // 3: para poder fazer um desvio incondicional
+iflez v1 8   // 4: termina o loop quando n == 0
+v2 = v2 * v1 // 5: atualiza fatorial
+v1 = v1 - $1 // 6: decrementa n
+iflez v3 4   // 7: volta ao teste do loop
+ret v2       // 8: retorna o valor do fatorial
+</pre></small></b>
+</li></ul>
+<hr>
+
+<h2>Implementação e Execução</h2>
+<h3>O que fazer</h3>
+
+Você deve desenvolver em C uma função chamada <b><code>peqcomp</code></b>
+que leia um arquivo de entrada contendo o código fonte de uma 
+função
+na linguagem <em>SBas</em>, gere o código de máquina correspondente
+no vetor que é passado como segundo parâmetro, e retorne um ponteiro 
+para a função gerada.
+
+<p>
+O arquivo de entrada terá no máximo 30 linhas,
+com um comando <em>SBas</em> por linha.
+</p><p>O protótipo de <code>peqcomp</code> é o seguinte:
+
+<small></small></p><pre><small>typedef int (*funcp) ();
+funcp peqcomp (FILE *f, unsigned char codigo[]);
+</small></pre>
+
+O parâmetro <b><code>f</code></b> é o descritor de um arquivo 
+texto, <b>já aberto para leitura</b>, de onde deve ser lido o código fonte 
+da função escrita em <em>SBas</em>. Note que a função
+<b>não deve fechar o arquivo</b>!
+
+Esses protótipos estão definidos no arquivo <code>peqcomp.h</code>, 
+disponível <a href="https://www.inf.puc-rio.br/~inf1018/2025.1/trabs/t2/peqcomp.h">AQUI</a>.
+
+<br> <br>
+<h3>Implementação</h3>
+
+<p>A função <code><b>peqcomp</b></code> armazenará o código gerado na região de memória
+passada como segundo parâmetro. O endereço retornado por <code><b>peqcomp</b></code>
+será o endereço do início desta memória porém convertido para o tipo <code><b>funcp</b></code>.
+
+</p><p>Para cada instrução <em>SBas</em>, imagine qual seria uma tradução possível
+para <em>assembly</em>. 
+Além disso, lembre-se que a tradução de uma
+função <em><em>SBas</em></em> deve começar com o prólogo usual (preparação do registro
+de ativação, incluindo o espaço para variáveis locais) e terminar com
+a finalização padrão (liberação do registro de ativação antes do retorno da função).
+</p><p>O código gerado deverá seguir as convenções de C/Linux quanto à passagem
+de parâmetros e valor de retorno.
+<font color="red" style="--darkreader-inline-color: var(--darkreader-text-ff0000, #ff1a1a);" data-darkreader-inline-color="">As variáveis locais deverão ser alocadas no Registro de Ativação de execução.</font>
+
+</p><p>
+Para ler e interpretar cada linha da linguagem <em><em>SBas</em></em>, teste
+se a linha contém cada um dos formatos possíveis.
+Veja um esboço de código C para fazer essa interpretação 
+<a href="https://www.inf.puc-rio.br/~inf1018/2025.1/trabs/t2/tratacodigo.c">AQUI</a>.
+Lembre-se que você terá que fazer adaptações pois,
+dentre outros detalhes, essa interpretação <b>não será feita na função <em>main</em></b>! 
+
+</p><p>
+Não é necessário fazer tratamento de erros no arquivo de entrada, você pode
+supor que o código fonte <em>SBas</em> desse arquivo <b>sempre estará correto</b>.
+</p><p>
+O código gerado por <code>peqcomp</code> deverá ser um 
+<b><em>código de máquina x86-64</em></b>, e não um código fonte
+assembly. Ou seja, você deverá descobrir o código de máquina que
+corresponde às instruções de assembly que implementam a tradução das 
+instruções da linguagem <em><em>SBas</em></em>. Para isso, você pode usar o
+programa <code>objdump</code> e, se necessário, uma documentação
+das instruções da Intel.
+</p><p>
+Por exemplo, para descobrir o código gerado por <code>movl %eax, %ecx</code>,
+você pode criar um arquivo meuteste.s contendo apenas essa instrução,
+traduzi-lo com o gcc (usando a opção -c) para gerar um arquivo objeto <code>meuteste.o</code>,
+e usar o comando
+<small></small></p><pre><small>objdump -d meuteste.o</small></pre>
+para ver o código de máquina
+gerado.
+
+<br><br>
+<h3>Estratégia de Implementação</h3>
+Para desenvolver o seu programa, use a técnica de <b>TDD (Test Driven Design)</b>, 
+na qual testes são escritos antes do código. 
+O propósito é garantir ao desenvolvedor (você) ter um bom entendimento dos requisitos do trabalho 
+antes de implementar o programa. 
+Com isto a automação de testes é praticada desde o início do desenvolvimento, 
+permitindo a elaboração e execução contínua de testes de regressão. 
+Desta forma fortalecemos a criação de um código que nasce simples, 
+testável e próximo aos requisitos do trabalho. Os passos gerais para seguir tal técnica:
+<ul>
+<li>Escrever/codificar um novo teste</li>
+<li>Executar todos os testes criados até o momento para ver se algum falha</li>
+<li>Escrever o código responsável por passar no novo teste inserido</li>
+<li>Executar todos os testes criados até o momento e atestar execução com sucesso</li>
+<li>Refatorar código testado</li>
+</ul>
+
+<p>
+Por exemplo:
+</p><ol>
+
+<li>Implemente a tradução de uma função <em>SBas</em> trivial, como
+o retorno de uma constante:
+<b><small><pre>ret $100
+</pre></small></b>
+Note que, neste momento, apenas a tradução da instrução <code>ret</code> é necessária!
+<p>Crie uma função <code>main</code> e teste esse primeiro passo, chamando a sua
+função <code>peqcomp</code>, chamando a função criada por ela, e imprimindo o valor de 
+retorno da função gerada.</p></li>
+
+<li>
+Continue implementando <b>e testando</b> 
+uma instrução por vez. Experimente usar constantes, parâmetros, variáveis
+locais, e combinações desses tipos como operandos.
+<p>Pense em que informações você precisa
+extrair para poder traduzir as instruções (quais são os operandos, qual é a operação,
+onde armazenar o resultado da operação).
+</p><p>Lembre-se que é necessário alocar espaço (no Registro de Ativação) para as variáveis
+locais!
+
+</p></li><li>Deixe para implementar a instrução de desvio apenas
+quando <b>todo o resto</b> estiver funcionando!
+<p>Pense em que informações você precisa guardar para traduzir
+essas instruções (note que você precisa saber qual o endereço
+da instrução correspondente à linha para onde o controle deve ser desviado...)
+</p></li></ol>
+
+<h3>Testando o gerador de código</h3>
+<p>Você deve criar um arquivo contendo apenas as funções <code>peqcomp</code>
+e auxiliares (se for o caso) e <b>outro arquivo</b> com uma função <code>main</code> para
+testá-las.
+</p><p> 
+Sua função <em>main</em> deverá abrir um ou mais arquivo texto que contém um
+"programa fonte" na linguagem <em><em>SBas</em></em> (i.e,
+uma função <em><em>SBas</em></em>) e chamar
+<em>peqcomp</em>, 
+passando o arquivo aberto como argumento juntamente com um ponteiro para a area 
+onde deverá ser gerado o código de máquina.
+Em seguida, sua <em>main</em> deverá chamar a função retornada 
+por <em>peqcomp</em>, passando os argumentos apropriados.
+</p><p>
+Por exemplo:
+<small></small></p><pre><small>#include "peqcomp.h"
+
+int main(int argc, char *argv[]) {
+  FILE *myfp;
+  unsigned char codigo[];
+  funcp funcao<em>SBas</em>;
+  int res;
+
+  /* Abre o arquivo fonte */
+  if ((myfp = fopen("programa", "r")) == NULL) {
+    perror("Falha na abertura do arquivo fonte");
+    exit(1);
+  }
+  /* compila a função <em>SBas</em> */
+  funcao<em>SBas</em> = peqcomp(myfp, codigo);
+  fclose(myfp);
+
+  /* chama a função */
+  res = (*funcao<em>SBas</em>) (....);  /* passando argumentos apropriados */
+  ...
+}
+</small></pre>
+
+<p>Não esqueça de compilar seu programa com</p>
+<p><b><code>gcc -Wall <font color="red" style="--darkreader-inline-color: var(--darkreader-text-ff0000, #ff1a1a);" data-darkreader-inline-color=""> -Wa,--execstack </font> -o testapeqcomp testapeqcomp.c peqcomp.c</code></b></p>
+<p>para permitir a execução do código de máquina criado por <code>peqcomp</code>!</p>
+
+Uma sugestão (não obrigatória!) para testar a chamada de uma função <em><em>SBas</em></em> com diferentes argumentos é
+sua função <em>main</em> receber argumentos passados na linha de comando.
+Para ter acesso a esses argumentos (representados por <em>strings</em>), 
+a sua função <code>main</code> deve ser declarada como
+<small><pre>int main(int argc, char *argv[])
+</pre></small>
+sendo <b><code>argc</code></b> o número de argumentos fornecidos na linha de comando 
+e <b><code>argv</code></b> um array de ponteiros para <em>strings</em>
+(os argumentos). 
+<p>Note que o primeiro argumento para <code>main</code> 
+(argv[0]) é sempre o nome do seu executável.
+Os parâmetros que deverão ser passados para a função 
+criada por <code>peqcomp</code> serão os argumentos de 1 em diante,
+convertidos para um valor inteiro 
+(você pode usar a função <code><b>atoi</b></code> para fazer essa conversão).
+<br><br>
+
+</p><hr>
+
+<h2>Entrega</h2>
+
+<p>
+Deverão ser entregues <b>via EAD</b> quatro arquivos:
+
+</p><ol>
+	<li>Um arquivo fonte chamado <font color="red" style="--darkreader-inline-color: var(--darkreader-text-ff0000, #ff1a1a);" data-darkreader-inline-color=""><b><code>peqcomp.c</code></b></font>, contendo as funções <code>peqcomp</code> (e funções auxiliares, se for o caso).
+	<ul>
+		<li> Esse arquivo <b>não</b> deve conter a função <code>main</code>.
+		</li><li>Coloque no início do arquivo, como comentário, os nomes dos integrantes do grupo da seguinte forma:
+<pre>/* Nome_do_Aluno1 Matricula Turma */
+/* Nome_do_Aluno2 Matricula Turma */
+</pre>
+	</li></ul>
+	</li><li>Um arquivo fonte chamado <font color="red" style="--darkreader-inline-color: var(--darkreader-text-ff0000, #ff1a1a);" data-darkreader-inline-color=""><b><code>testapeqcomp.c</code></b></font> contendo a função main e os testes das suas funções. Coloque o nome dos integrantes, como comentário, no início d arquivo. </li>
+	<li>Um arquivo ZIP com os códigos em SBas que você usou para testar o seu trabalho</li>
+	<li>Um arquivo texto, chamado <font color="red" style="--darkreader-inline-color: var(--darkreader-text-ff0000, #ff1a1a);" data-darkreader-inline-color=""><code><b>relatorio.txt</b></code></font>, contendo um pequeno relatório.
+	<ul>
+		<li>O relatório deverá explicar o que está funcionando e o que não 
+está funcionando. Não é necessário documentar suas funções no relatório.
+ Seu código deverá ser claro o suficiente para que isso não seja 
+necessário.
+		</li><li>O relatório deverá conter <b>alguns</b> exemplos de funções da linguagem <em><em>SBas</em></em> que você usou para testar o seu trabalho. Mostre tanto as funções <em><em>SBas</em></em> traduzidas e executadas com sucesso como as que não tiveram sucesso (se for o caso).
+		</li><li>Coloque também no relatório o nome dos integrantes do grupo 
+	</li></ul>
+</li></ol>
+
+<p>
+Indique na área de texto da tarefa do EAD o nome dos integrantes do grupo. Apenas uma entrega é necessária (usando o <em>login</em> de um dos integrantes do grupo) se os dois integrantes pertencerem à mesma turma.
+
+
+
+</p></div></body></html>
